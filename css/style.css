@@ -244,20 +244,14 @@ body{
     background: #5266dfe6;
     color: #fff;
 }
-.mobile-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.mobile-menu{
+.menu-mobile-content{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.mobile-menu .menu-item{
+.menu-mobile-list .menu-item{
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
@@ -265,15 +259,15 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.mobile-logo{
+.menu-mobile-logo{
     display: flex;
     justify-content: center;
 }
-.mobile-icons{
+.menu-mobile-icons{
     display: flex;
     justify-content: center;
 }
-.mobile-icons img{
+.menu-mobile-icons img{
     margin: 0 10px;
 }
 .btn-close-box{
@@ -505,7 +499,4 @@ body{
     .mt-md-5{
         margin-top: 4rem;
     }
-}
-@media screen and (min-width: 560px){
-    
 }
