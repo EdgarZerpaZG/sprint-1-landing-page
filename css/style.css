@@ -1,5 +1,5 @@
 /******************************************/
-/*Preprocesing to Sass*/
+/*Preprocessing*/
 /******************************************/
 /******************************************/
 /*General*/
@@ -185,9 +185,6 @@ body {
 .order-1 {
   order: 1; }
 
-/******************************************/
-/*Mixins*/
-/******************************************/
 .btn-blue {
   background-color: #5266df;
   padding: 10px 15px;
@@ -297,21 +294,21 @@ body {
   content: "";
   position: absolute;
   bottom: -45px;
-  right: -100px;
   width: 350px;
   height: 200px;
   border-radius: 0 0 0 60px;
-  background-color: #5266df; }
+  background-color: #5266df;
+  right: -100px; }
 
 .img-monitor-before-two::before {
   content: "";
   position: absolute;
   bottom: -45px;
-  left: -100px;
   width: 350px;
   height: 200px;
   border-radius: 0 0 60px 0;
-  background-color: #5266df; }
+  background-color: #5266df;
+  left: -100px; }
 
 .img-monitor.img-border {
   border: 10px solid #000;
