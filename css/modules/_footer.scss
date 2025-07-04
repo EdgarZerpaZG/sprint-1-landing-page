@@ -1,0 +1,33 @@
+.footer-one{
+    background-color: #5266df;
+    color: #fff;
+}
+.footer-two{
+    background-color: #242946;
+    color: #fff;
+}
+.footer-list{
+    height: 100%;
+}
+.footer-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.footer-menu .menu-item{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.footer-icons{
+    display: flex;
+    justify-content: end;
+}
+.footer-icons img{
+    margin: 0 10px;
+}
