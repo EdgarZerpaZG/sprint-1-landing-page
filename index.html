@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint 1: Landing Page Vanilla</title>
+    <title>Sprint 1: Landing Page Tailwind CSS</title>
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="position-relative">
-    <!--Header web vanilla-->
-    <header class="my-3">
+<body class="relative">
+    <!--Header web tailwind css-->
+    <header class="my-8">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-6">
@@ -18,20 +19,20 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="header-list d-block d-md-none">
-                        <ul class="header-menu text-uppercase text-light">
+                    <div class="header-list block d-md-none">
+                        <ul class="header-menu uppercase text-stone-500">
                             <li class="menu-item">Features</li>
                             <li class="menu-item">Pricing</li>
                             <li class="menu-item">Contact</li>
                             <li class="menu-item btn-red">Login</li>
                         </ul>
                     </div>
-                    <div id="menu-mobile-btn" class="header-list-mobile d-none d-md-block h-100">
-                        <div class="menu-mobile-box h-100 d-flex justify-content-center align-items-center">
+                    <div id="menu-mobile-btn" class="header-list-mobile hidden d-md-block h-full">
+                        <div class="menu-mobile-box h-full flex justify-content-center align-items-center">
                             <img class="img-fluid" src="img/icon-hamburger.svg" alt="">
                         </div>
                     </div>
-                    <div id="menu-mobile" class="menu-mobile d-none d-md-block">
+                    <div id="menu-mobile" class="menu-mobile hidden d-md-block">
                         <div id="menu-mobile-close" class="btn-close-box">
                             <img class="img-fluid btn-close" src="img/icon-close.svg" alt="">
                         </div>
@@ -39,10 +40,10 @@
                             <img class="img-fluid" src="img/logo-bookmark-white.svg" alt="Bookmark">
                         </div>
                         <div class="menu-mobile-content">
-                            <div class="h-100 w-100">
-                                <div class="col-12 h-100">
+                            <div class="h-full w-full">
+                                <div class="col-12 h-full">
                                     <div class="menu-mobile-list">
-                                        <ul class="header-menu-mobile text-uppercase">
+                                        <ul class="header-menu-mobile uppercase">
                                             <li class="menu-item">Features</li>
                                             <li class="menu-item">Pricing</li>
                                             <li class="menu-item">Contact</li>
@@ -65,15 +66,15 @@
             </div>
         </div>
     </header>
-    <!--Content web vanilla-->
-    <section class="position-relative my-5 py-4">
+    <!--Content web tailwind css-->
+    <section class="relative my-5 py-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 my-md-4 order-0 order-md-1">
-                    <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="flex justify-content-center align-items-center h-full">
                         <div>
-                            <h3 class="mb-3 text-align-md-center">A Simple Bookmark Manager</h3>
-                            <p class="mb-3 text-light text-align-md-center">A clean and simple interface to organize your favorite <br class="d-block d-md-none">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                            <h3 class="mb-3 text-align-md-center text-3xl">A Simple Bookmark Manager</h3>
+                            <p class="mb-3 text-stone-500 text-align-md-center">A clean and simple interface to organize your favorite <br class="block d-md-none">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                             <div class="container-fluid">
                                 <div class="row justify-content-md-center">
                                     <button type="button" class="btn-blue me-3">Get in on Chrome</button>
@@ -84,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-1 order-md-0">
-                    <div class="position-relative">
+                    <div class="relative">
                         <img class="img-fluid img-monitor img-border img-shadow" src="img/illustration-features-tab-1.svg" alt="">
                         <div class="img-monitor-before-one"></div>
                     </div>
@@ -92,11 +93,11 @@
             </div>
         </div>
     </section>
-    <section class="position-relative my-4 py-4">
+    <section class="relative my-4 py-4">
         <div class="container">
             <div class="text-align-center">
-                <h5 class="mb-3">Features</h5>
-                <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="d-block d-md-none">favorite websites. Your bookmarks sync between your devices <br class="d-block d-md-none">so you can access them on the go</p>
+                <h5 class="mb-3 text-5xl">Features</h5>
+                <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="block d-md-none">favorite websites. Your bookmarks sync between your devices <br class="block d-md-none">so you can access them on the go</p>
             </div>
             <div class="tabs my-5">
                 <div class="tabs-content my-5">
@@ -108,17 +109,17 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <div class="position-relative">
+                        <div class="relative">
                             <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="">
                             <div class="img-monitor-before-two"></div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 my-md-4">
-                        <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="flex justify-content-center align-items-center h-full">
                             <div>
-                                <h5 class="mb-3 text-align-md-center">Bookmark in one click</h5>
-                                <p class="mb-3 text-light text-align-md-center">Organize your bookmarks however you like. Our <br class="d-block d-md-none">simple drag-and-drop interface gives you complete <br class="d-block d-md-none">control over how you manage your favorite sites.</p>
-                                <button type="button" class="btn-blue d-block mx-md-auto">More info</button>
+                                <h3 class="mb-3 text-align-md-center text-3xl">Bookmark in one click</h3>
+                                <p class="mb-3 text-stone-500 text-align-md-center">Organize your bookmarks however you like. Our <br class="block d-md-none">simple drag-and-drop interface gives you complete <br class="block d-md-none">control over how you manage your favorite sites.</p>
+                                <button type="button" class="btn-blue block mx-md-auto">More info</button>
                             </div>
                         </div>
                     </div>
@@ -126,17 +127,17 @@
             </div>
         </div>
     </section>
-    <section class="position-relative my-4 py-4">
+    <section class="relative my-4 py-4">
         <div class="container my-5">
             <div class="text-align-center">
-                <h5 class="mb-3">Download the extension</h5>
-                <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="d-block d-md-none">you've got a favorite you'd like us to prioritize.</p>
+                <h5 class="mb-3 text-5xl">Download the extension</h5>
+                <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="block d-md-none">you've got a favorite you'd like us to prioritize.</p>
             </div>
             <div class="my-5">
                 <div class="row">
-                    <div class="col-12 col-md-4 d-flex justify-content-center mt-md-0 h-100">
+                    <div class="col-12 col-md-4 flex justify-content-center mt-md-0 h-full">
                         <div class="py-3 text-align-center shadow-card mx-3">
-                            <img class="d-block mx-auto my-3" src="img/logo-chrome.svg" alt="">
+                            <img class="block mx-auto my-3" src="img/logo-chrome.svg" alt="">
                             <p>Add to Chrome</p>
                             <p class="text-light">Minimum version 62</p>
                             <img class="img-fluid" src="img/bg-dots.svg" alt="">
@@ -145,9 +146,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 d-flex justify-content-center mt-4 mt-md-4 h-100">
+                    <div class="col-12 col-md-4 flex justify-content-center mt-4 mt-md-4 h-full">
                         <div class="py-3 text-align-center shadow-card mx-3">
-                            <img class="d-block mx-auto my-3" src="img/logo-firefox.svg" alt="">
+                            <img class="block mx-auto my-3" src="img/logo-firefox.svg" alt="">
                             <p>Add to Firefox</p>
                             <p class="text-light">Minimum version 55</p>
                             <img class="img-fluid" src="img/bg-dots.svg" alt="">
@@ -156,9 +157,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 d-flex justify-content-center mt-4 mt-md-5 h-100">
+                    <div class="col-12 col-md-4 flex justify-content-center mt-4 mt-md-5 h-full">
                         <div class="py-3 text-align-center shadow-card mx-3">
-                            <img class="d-block mx-auto my-3" src="img/logo-opera.svg" alt="">
+                            <img class="block mx-auto my-3" src="img/logo-opera.svg" alt="">
                             <p>Add to Opera</p>
                             <p class="text-light">Minimum version 46</p>
                             <img class="img-fluid" src="img/bg-dots.svg" alt="">
@@ -171,13 +172,13 @@
             </div>
         </div>
     </section>
-    <section class="position-relative my-4 py-4">
+    <section class="relative my-4 py-4">
         <div class="container">
             <div class="text-align-center">
-                <h5 class="mb-3">Frequently Asked Questions</h5>
-                <p class="mb-3 text-light">Here are some of or FAQs. if you have any other questions <br class="d-block d-md-none">you'd like answered please feel free to email us.</p>
+                <h5 class="mb-3 text-5xl">Frequently Asked Questions</h5>
+                <p class="mb-3 text-light">Here are some of or FAQs. if you have any other questions <br class="block d-md-none">you'd like answered please feel free to email us.</p>
             </div>
-            <div class="d-flex justify-content-center my-3"> 
+            <div class="flex justify-content-center my-3"> 
                 <div class="accordion-content">
                     <ul class="accordion-list">
                         <li class="accordion-item">What is Bookmark? <img class="img-fluid" src="img/icon-arrow.svg" alt=""></li>
@@ -186,23 +187,23 @@
                         <li class="accordion-item">What about other Chormium browser? <img class="img-fluid" src="img/icon-arrow.svg" alt=""></li>
                     </ul>
                     <div class="mt-5">
-                        <button type="button" class="btn-blue d-block mx-auto">More info</button>
+                        <button type="button" class="btn-blue block mx-auto">More info</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Footer web vanilla-->
+    <!--Footer web tailwind css-->
     <footer>
-        <div class="footer-one position-relative py-5 px-2 text-align-center">
-            <p class="mb-3 text-uppercase">35.000+ already joined</p>
-            <h3 class="mb-3">Stay up-to-date with what <br class="d-block d-md-none">we're doing</h3>
+        <div class="footer-one relative py-5 px-2 text-align-center">
+            <p class="mb-3 uppercase">35.000+ already joined</p>
+            <h3 class="mb-3 text-3xl">Stay up-to-date with what <br class="block d-md-none">we're doing</h3>
             <form action="" class="form-group">
                 <input type="email" name="email" id="form-email" placeholder="Enter your email address" required>
                 <button type="button" class="btn-red">Contact Us</button>
             </form>
         </div>
-        <div class="footer-two position-relative py-3">
+        <div class="footer-two relative py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -212,7 +213,7 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="footer-list">
-                            <ul class="footer-menu text-uppercase">
+                            <ul class="footer-menu uppercase">
                                 <li class="menu-item">Features</li>
                                 <li class="menu-item">Pricing</li>
                                 <li class="menu-item">Contact</li>
