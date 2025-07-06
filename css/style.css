@@ -16,10 +16,6 @@ body{
 .container-fluid{
     width: 100%;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -177,12 +173,6 @@ body{
     border: 10px solid #000;
     border-radius: 10px;
 }
-.img-monitor.img-shadow{
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.shadow-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .tabs-list{
     list-style: none;
     display: flex;
@@ -200,21 +190,6 @@ body{
 }
 .form-group input{
     padding: 8px;
-}
-.accordion-list{
-    list-style: none;
-}
-.accordion-list .accordion-item{
-    margin: 10px 0;
-    padding: 20px 0;
-    border-bottom: 1px solid #5d5d5d;
-}
-.accordion-list .accordion-item:nth-child(1){
-    border-top: 1px solid #5d5d5d;
-}
-.accordion-list .accordion-item img{
-    margin-left: 120px;
-    float: right;
 }
 /******************************************/
 /*Footer*/
