@@ -12,14 +12,14 @@
     <!--Header web tailwind css-->
     <header class="my-8">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-between">
                 <div class="col-md-6">
                     <div class="header-logo">
                         <img src="img/logo-bookmark.svg" alt="Bookmark">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="header-list block md:hidden">
+                    <div class="header-list hidden md:block">
                         <ul class="header-menu uppercase text-stone-500">
                             <li class="menu-item">Features</li>
                             <li class="menu-item">Pricing</li>
@@ -27,12 +27,12 @@
                             <li class="menu-item btn-red">Login</li>
                         </ul>
                     </div>
-                    <div id="menu-mobile-btn" class="header-list-mobile hidden d-md-block h-full">
-                        <div class="menu-mobile-box h-full flex justify-content-center align-items-center">
+                    <div id="menu-mobile-btn" class="header-list-mobile block md:hidden h-full">
+                        <div class="menu-mobile-box h-full flex justify-center items-center">
                             <img class="img-fluid" src="img/icon-hamburger.svg" alt="">
                         </div>
                     </div>
-                    <div id="menu-mobile" class="menu-mobile hidden d-md-block">
+                    <div id="menu-mobile" class="menu-mobile block md:hidden">
                         <div id="menu-mobile-close" class="btn-close-box">
                             <img class="img-fluid btn-close" src="img/icon-close.svg" alt="">
                         </div>
@@ -67,16 +67,16 @@
         </div>
     </header>
     <!--Content web tailwind css-->
-    <section class="relative my-5 py-4">
+    <section class="relative my-8 py-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 md:my-4 order-0 md:order-1">
-                    <div class="flex justify-content-center align-items-center h-full">
+                <div class="col-12 col-md-6 md:my-4 order-end md:order-start">
+                    <div class="flex justify-center items-center h-full">
                         <div>
-                            <h3 class="mb-3 text-align-md-center text-3xl">A Simple Bookmark Manager</h3>
-                            <p class="mb-3 text-stone-500 text-align-md-center">A clean and simple interface to organize your favorite <br class="block md:hidden">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                            <h3 class="mb-3 text-center md:text-start text-3xl">A Simple Bookmark Manager</h3>
+                            <p class="mb-3 text-stone-500 text-center md:text-start">A clean and simple interface to organize your favorite <br class="block md:hidden">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                             <div class="container-fluid">
-                                <div class="row justify-content-md-center">
+                                <div class="row justify-center md:justify-normal">
                                     <button type="button" class="btn-blue me-3">Get in on Chrome</button>
                                     <button type="button" class="btn-light">Get in on Firefox</button>
                                 </div>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 order-1 md:order-0">
+                <div class="col-12 col-md-6 order-start md:order-end">
                     <div class="relative">
                         <img class="img-fluid img-monitor img-border img-shadow" src="img/illustration-features-tab-1.svg" alt="">
                         <div class="img-monitor-before-one"></div>
@@ -93,9 +93,9 @@
             </div>
         </div>
     </section>
-    <section class="relative my-4 py-4">
+    <section class="relative my-8 py-4">
         <div class="container">
-            <div class="text-align-center">
+            <div class="text-center">
                 <h5 class="mb-3 text-5xl">Features</h5>
                 <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="block md:hidden">favorite websites. Your bookmarks sync between your devices <br class="block md:hidden">so you can access them on the go</p>
             </div>
@@ -115,11 +115,11 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 md:my-4">
-                        <div class="flex justify-content-center align-items-center h-full">
+                        <div class="flex justify-center items-center h-full">
                             <div>
-                                <h3 class="mb-3 text-align-md-center text-3xl">Bookmark in one click</h3>
-                                <p class="mb-3 text-stone-500 text-align-md-center">Organize your bookmarks however you like. Our <br class="block md:hidden">simple drag-and-drop interface gives you complete <br class="block md:hidden">control over how you manage your favorite sites.</p>
-                                <button type="button" class="btn-blue block mx-md-auto">More info</button>
+                                <h3 class="mb-3 text-center md:text-start text-3xl">Bookmark in one click</h3>
+                                <p class="mb-3 text-stone-500 text-center md:text-start">Organize your bookmarks however you like. Our <br class="block md:hidden">simple drag-and-drop interface gives you complete <br class="block md:hidden">control over how you manage your favorite sites.</p>
+                                <button type="button" class="btn-blue block md:mx-auto">More info</button>
                             </div>
                         </div>
                     </div>
@@ -127,16 +127,16 @@
             </div>
         </div>
     </section>
-    <section class="relative my-4 py-4">
+    <section class="relative my-8 py-4">
         <div class="container my-5">
-            <div class="text-align-center">
+            <div class="text-center">
                 <h5 class="mb-3 text-5xl">Download the extension</h5>
                 <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="block md:hidden">you've got a favorite you'd like us to prioritize.</p>
             </div>
             <div class="my-5">
                 <div class="row">
-                    <div class="col-12 col-md-4 flex justify-content-center md:mt-0-0 h-full">
-                        <div class="py-3 text-align-center shadow-card mx-3">
+                    <div class="col-12 col-md-4 flex justify-center md:mt-0-0 h-full">
+                        <div class="py-3 text-center shadow-card mx-3">
                             <img class="block mx-auto my-3" src="img/logo-chrome.svg" alt="">
                             <p>Add to Chrome</p>
                             <p class="text-light">Minimum version 62</p>
@@ -146,8 +146,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 flex justify-content-center mt-4 md:mt-4 h-full">
-                        <div class="py-3 text-align-center shadow-card mx-3">
+                    <div class="col-12 col-md-4 flex justify-center mt-4 md:mt-4 h-full">
+                        <div class="py-3 text-center shadow-card mx-3">
                             <img class="block mx-auto my-3" src="img/logo-firefox.svg" alt="">
                             <p>Add to Firefox</p>
                             <p class="text-light">Minimum version 55</p>
@@ -157,8 +157,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 flex justify-content-center mt-4 md:mt-5 h-full">
-                        <div class="py-3 text-align-center shadow-card mx-3">
+                    <div class="col-12 col-md-4 flex justify-center mt-4 md:mt-8 h-full">
+                        <div class="py-3 text-center shadow-card mx-3">
                             <img class="block mx-auto my-3" src="img/logo-opera.svg" alt="">
                             <p>Add to Opera</p>
                             <p class="text-light">Minimum version 46</p>
@@ -172,13 +172,13 @@
             </div>
         </div>
     </section>
-    <section class="relative my-4 py-4">
+    <section class="relative my-8 py-4">
         <div class="container">
-            <div class="text-align-center">
+            <div class="text-center">
                 <h5 class="mb-3 text-5xl">Frequently Asked Questions</h5>
                 <p class="mb-3 text-light">Here are some of or FAQs. if you have any other questions <br class="block md:hidden">you'd like answered please feel free to email us.</p>
             </div>
-            <div class="flex justify-content-center my-3"> 
+            <div class="flex justify-center my-3"> 
                 <div class="accordion-content">
                     <ul class="accordion-list">
                         <li class="accordion-item">What is Bookmark? <img class="img-fluid" src="img/icon-arrow.svg" alt=""></li>
@@ -195,7 +195,7 @@
     </section>
     <!--Footer web tailwind css-->
     <footer>
-        <div class="footer-one relative py-5 px-4 text-align-center">
+        <div class="footer-one relative py-5 px-4 text-center">
             <p class="mb-3 uppercase">35.000+ already joined</p>
             <h3 class="mb-3 text-3xl">Stay up-to-date with what <br class="block md:hidden">we're doing</h3>
             <form action="" class="form-group">
