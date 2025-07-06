@@ -48,12 +48,6 @@ body{
     max-width: 100%;
     height: auto;
 }
-.order-0{
-    order: 0;
-}
-.order-1{
-    order: 1;
-}
 .btn-blue{
     background-color: #5266df;
     padding: 10px 15px;
@@ -347,22 +341,6 @@ body{
         left: -15px;
         width: 300px;
     }
-    .my-md-4{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .order-md-0{
-        order: 0;
-    }
-    .order-md-1{
-        order: 1;
-    }
-    .d-md-block{
-        display: block;
-    }
-    .d-md-none{
-        display: none;
-    }
 }
 @media screen and (min-width: 768px){
     .container {
@@ -375,20 +353,5 @@ body{
     .col-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
-    }
-    .mt-md-0{
-        margin-top: 0;
-    }
-    .mt-md-2{
-        margin-top: .5rem;
-    }
-    .mt-md-3{
-        margin-top: 1rem;
-    }
-    .mt-md-4{
-        margin-top: 2rem;
-    }
-    .mt-md-5{
-        margin-top: 4rem;
     }
 }
