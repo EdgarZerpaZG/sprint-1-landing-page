@@ -173,21 +173,6 @@ body{
     border: 10px solid #000;
     border-radius: 10px;
 }
-.tabs-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-.tabs-list .tab-item{
-    font-size: 16px;
-    padding-left: 45px;
-    padding-right: 45px;
-    cursor: pointer;
-    border-bottom: 2px solid #5d5d5d;
-}
-.tabs-list .tab-item.active{
-    border-bottom: 2px solid #fb5859;
-}
 .form-group input{
     padding: 8px;
 }

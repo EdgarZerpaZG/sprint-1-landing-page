@@ -69,12 +69,12 @@
     <!--Content web tailwind css-->
     <section class="relative my-8 py-4">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="col-12 col-md-6 md:my-4 order-end md:order-start">
+            <div class="md:flex md:flex-wrap">
+                <div class="col-12 col-md-6 my-4 order-end md:order-start">
                     <div class="flex justify-center items-center h-full">
                         <div>
-                            <h3 class="mb-3 text-center md:text-start text-3xl">A Simple Bookmark Manager</h3>
-                            <p class="mb-3 text-stone-500 text-center md:text-start">A clean and simple interface to organize your favorite <br class="block md:hidden">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                            <p class="mb-3 text-center md:text-left text-3xl">A Simple Bookmark Manager</p>
+                            <p class="mb-3 text-stone-500 text-center md:text-left">A clean and simple interface to organize your favorite <br class="hidden md:block">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                             <div class="container-fluid">
                                 <div class="flex flex-wrap justify-center md:justify-normal">
                                     <button type="button" class="btn-blue me-3">Get in on Chrome</button>
@@ -96,30 +96,78 @@
     <section class="relative my-8 py-4">
         <div class="container">
             <div class="text-center">
-                <h5 class="mb-3 text-5xl">Features</h5>
-                <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="block md:hidden">favorite websites. Your bookmarks sync between your devices <br class="block md:hidden">so you can access them on the go</p>
+                <p class="mb-3 text-3xl">Features</p>
+                <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="hidden md:block">favorite websites. Your bookmarks sync between your devices <br class="block md:hidden">so you can access them on the go</p>
             </div>
-            <div class="tabs my-5">
-                <div class="tabs-content my-5">
-                    <ul class="tabs-list">
-                        <li class="tab-item active pb-4">Simple Bookmarking</li>
-                        <li class="tab-item pb-4">Speedy Searching</li>
-                        <li class="tab-item pb-4">Easy Sharing</li>
+            <div>
+                <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                    <ul class="flex flex-wrap justify-around text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="text-red-600 hover:text-red-600 dark:text-red-500 dark:hover:text-red-500 border-red-600 dark:border-red-500">
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Simple Bookmarking</button>
+                        </li>
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Speedy Searching</button>
+                        </li>
+                        <li role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Easy Sharing</button>
+                        </li>
                     </ul>
                 </div>
-                <div class="flex flex-wrap">
-                    <div class="col-12 col-md-6">
-                        <div class="relative">
-                            <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="">
-                            <div class="img-monitor-before-two"></div>
+                <div id="default-tab-content">
+                    <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="md:flex md:flex-wrap">
+                            <div class="col-12 col-md-6">
+                                <div class="relative">
+                                    <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="">
+                                    <div class="img-monitor-before-two"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 md:my-4">
+                                <div class="flex justify-center items-center h-full">
+                                    <div>
+                                        <p class="mb-3 text-center md:text-left text-3xl">Bookmark in one click</p>
+                                        <p class="mb-3 text-stone-500 text-center md:text-left">Organize your bookmarks however you like. Our <br class="hidden md:block">simple drag-and-drop interface gives you complete <br class="block md:hidden">control over how you manage your favorite sites.</p>
+                                        <button type="button" class="btn-blue block md:inline mx-auto">More info</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 md:my-4">
-                        <div class="flex justify-center items-center h-full">
-                            <div>
-                                <h3 class="mb-3 text-center md:text-start text-3xl">Bookmark in one click</h3>
-                                <p class="mb-3 text-stone-500 text-center md:text-start">Organize your bookmarks however you like. Our <br class="block md:hidden">simple drag-and-drop interface gives you complete <br class="block md:hidden">control over how you manage your favorite sites.</p>
-                                <button type="button" class="btn-blue block md:mx-auto">More info</button>
+                    <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                        <div class="md:flex md:flex-wrap">
+                            <div class="col-12 col-md-6">
+                                <div class="relative">
+                                    <img class="img-fluid img-monitor" src="img/illustration-features-tab-2.svg" alt="">
+                                    <div class="img-monitor-before-two"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 md:my-4">
+                                <div class="flex justify-center items-center h-full">
+                                    <div>
+                                        <p class="mb-3 md:text-left text-3xl">Intelligent search</p>
+                                        <p class="mb-3 text-stone-500 md:text-left">Our powerfull search feature will help you find saved <br class="hidden md:block">sites in no time at all. No need to trawl through all of <br class="hidden md:block">your bookmarks.</p>
+                                        <button type="button" class="btn-blue block md:inline mx-auto">More info</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                        <div class="md:flex md:flex-wrap">
+                            <div class="col-12 col-md-6">
+                                <div class="relative">
+                                    <img class="img-fluid img-monitor" src="img/illustration-features-tab-3.svg" alt="">
+                                    <div class="img-monitor-before-two"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 md:my-4">
+                                <div class="flex justify-center items-center h-full">
+                                    <div>
+                                        <p class="mb-3 md:text-left text-3xl">Shres your bookmarks</p>
+                                        <p class="mb-3 text-stone-500 md:text-left">Easily share your bookmarks and collections with <br class="hidden md:block">other. Create a shareable link that you can send at <br class="block md:hidden">the click of a button.</p>
+                                        <button type="button" class="btn-blue block md:inline mx-auto">More info</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,17 +178,17 @@
     <section class="relative my-8 py-4">
         <div class="container my-5">
             <div class="text-center">
-                <h5 class="mb-3 text-5xl">Download the extension</h5>
-                <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="block md:hidden">you've got a favorite you'd like us to prioritize.</p>
+                <p class="mb-3 text-3xl">Download the extension</p>
+                <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="hidden md:block">you've got a favorite you'd like us to prioritize.</p>
             </div>
             <div class="my-5">
-                <div class="flex flex-wrap">
-                    <div class="col-12 col-md-4 flex justify-center md:mt-0-0 h-full">
+                <div class="md:flex md:flex-wrap">
+                    <div class="col-12 col-md-4 flex justify-center h-full">
                         <div class="py-3 text-center shadow-xl/20 mx-3">
                             <img class="block mx-auto my-3" src="img/logo-chrome.svg" alt="">
                             <p>Add to Chrome</p>
                             <p class="text-light">Minimum version 62</p>
-                            <img class="img-fluid" src="img/bg-dots.svg" alt="">
+                            <img class="img-fluid py-4" src="img/bg-dots.svg" alt="">
                             <div class="my-2">
                                 <button type="button" class="btn-blue">Add & Install Extension</button>
                             </div>
@@ -151,7 +199,7 @@
                             <img class="block mx-auto my-3" src="img/logo-firefox.svg" alt="">
                             <p>Add to Firefox</p>
                             <p class="text-light">Minimum version 55</p>
-                            <img class="img-fluid" src="img/bg-dots.svg" alt="">
+                            <img class="img-fluid py-4" src="img/bg-dots.svg" alt="">
                             <div class="my-2">
                                 <button type="button" class="btn-blue">Add & Install Extension</button>
                             </div>
@@ -162,7 +210,7 @@
                             <img class="block mx-auto my-3" src="img/logo-opera.svg" alt="">
                             <p>Add to Opera</p>
                             <p class="text-light">Minimum version 46</p>
-                            <img class="img-fluid" src="img/bg-dots.svg" alt="">
+                            <img class="img-fluid py-4" src="img/bg-dots.svg" alt="">
                             <div class="my-2">
                                 <button type="button" class="btn-blue">Add & Install Extension</button>
                             </div>
@@ -174,36 +222,74 @@
     </section>
     <section class="relative my-8 py-4">
         <div class="container">
-            <div class="text-center">
-                <h5 class="mb-3 text-5xl">Frequently Asked Questions</h5>
-                <p class="mb-3 text-light">Here are some of or FAQs. if you have any other questions <br class="block md:hidden">you'd like answered please feel free to email us.</p>
+            <div class="text-center my-4">
+                <p class="mb-3 text-3xl">Frequently Asked Questions</p>
+                <p class="mb-3 text-light">Here are some of or FAQs. if you have any other questions <br class="hidden md:block">you'd like answered please feel free to email us.</p>
             </div>
-            <div class="flex justify-center my-3"> 
+            <div class="flex justify-center my-4"> 
                 <div class="w-full">
-                    <details class="border border-transparent p-4 border-b-stone-500" open>
-                        <summary class="text-sm leading-6 font-semibold text-gray-900 select-none">What is Bookmark?</summary>
-                        <div class="mt-3 text-sm leading-6 text-gray-600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                    <div id="accordion-open" data-accordion="open" data-active-classes="bg-white dark:text-black" data-inactive-classes="bg-white dark:text-black">
+                        <div class="border border-transparent border-t-stone-500 border-b-stone-500">
+                            <h2 id="accordion-open-heading-1">
+                                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-right text-black" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+                                <span class="flex items-center">What is Bookmark?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
+                                <div class="p-5">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                                </div>
+                            </div>
                         </div>
-                    </details>
-                    <details class="border border-transparent p-4  border-b-stone-500">
-                        <summary class="text-sm leading-6 font-semibold text-gray-900 select-none">How can I request a new browser?</summary>
-                        <div class="mt-3 text-sm leading-6 text-gray-600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                        <div class="border border-transparent border-b-stone-500">
+                            <h2 id="accordion-open-heading-2">
+                                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-right text-black" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+                                <span class="flex items-center">How can I request a new browser?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                                <div class="p-5">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                                </div>
+                            </div>
                         </div>
-                    </details>
-                    <details class="border border-transparent p-4  border-b-stone-500">
-                        <summary class="text-sm leading-6 font-semibold text-gray-900 select-none">Is there a mobile app?</summary>
-                        <div class="mt-3 text-sm leading-6 text-gray-600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                        <div class="border border-transparent border-b-stone-500">
+                            <h2 id="accordion-open-heading-3">
+                                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-right text-black" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+                                <span class="flex items-center">Is there a mobile app?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                                <div class="p-5">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                                </div>
+                            </div>
                         </div>
-                    </details>
-                    <details class="border border-transparent p-4 border-b-stone-500">
-                        <summary class="text-sm leading-6 font-semibold text-gray-900 select-none">What about other Chormium browser?</summary>
-                        <div class="mt-3 text-sm leading-6 text-gray-600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                        <div class="border border-transparent border-b-stone-500">
+                            <h2 id="accordion-open-heading-4">
+                                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-right text-black" data-accordion-target="#accordion-open-body-4" aria-expanded="false" aria-controls="accordion-open-body-4">
+                                <span class="flex items-center">What about other Chormium browser?</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                                <div class="p-5">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam asperiores recusandae cumque fugiat ratione aliquid voluptatibus cupiditate consequuntur delectus. Ab repudiandae debitis, velit qui temporibus officiis dolor. Perferendis, voluptates aliquid!</p>
+                                </div>
+                            </div>
                         </div>
-                    </details>
+                    </div>
                     <div class="mt-5">
                         <button type="button" class="btn-blue block mx-auto">More info</button>
                     </div>
@@ -213,22 +299,18 @@
     </section>
     <!--Footer web tailwind css-->
     <footer>
-        <div class="footer-one relative py-5 px-4 text-center">
+        <div class="footer-one relative py-10 px-4 text-center">
             <p class="mb-3 uppercase">35.000+ already joined</p>
-            <h3 class="mb-3 text-3xl">Stay up-to-date with what <br class="block md:hidden">we're doing</h3>
+            <p class="mb-3 text-3xl">Stay up-to-date with what <br class="block md:hidden">we're doing</p>
             <form action="" class="form-group">
-                <input
-                type="text"
-                value="Enter your email address "
-                class="invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 bg-white text-stone-500"
-                />
+                <input type="text" value="Enter your email address " class="bg-white text-stone-500" required/>
                 <!-- <input type="email" name="email" id="form-email" placeholder="Enter your email address" required> -->
                 <button type="submit" class="btn-red">Contact Us</button>
             </form>
         </div>
-        <div class="footer-two relative py-3">
+        <div class="footer-two relative py-5">
             <div class="container">
-                <div class="flex flex-wrap">
+                <div class="md:flex md:flex-wrap">
                     <div class="col-12 col-md-4">
                         <div class="footer-logo">
                             <img class="img-fluid" src="img/logo-bookmark-white.svg" alt="Bookmark">
@@ -253,6 +335,8 @@
             </div>
         </div>
     </footer>
+    <!--Scripts-->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
