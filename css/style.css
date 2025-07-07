@@ -13,9 +13,6 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-.container-fluid{
-    width: 100%;
-}
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -23,33 +20,6 @@ body{
 .img-fluid{
     max-width: 100%;
     height: auto;
-}
-.btn-blue{
-    background-color: #5266df;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-}
-.btn-red{
-    background-color: #fb5859;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-}
-.btn-light{
-    background-color: #ccc;
-    padding: 10px 15px;
-    color: #000;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
 }
 /******************************************/
 /*Header*/
@@ -179,17 +149,6 @@ body{
 /******************************************/
 /*Footer*/
 /******************************************/
-.footer-one{
-    background-color: #5266df;
-    color: #fff;
-}
-.footer-two{
-    background-color: #242946;
-    color: #fff;
-}
-.footer-list{
-    height: 100%;
-}
 .footer-menu{
     list-style: none;
     display: flex;
@@ -204,10 +163,6 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
-}
-.footer-icons{
-    display: flex;
-    justify-content: end;
 }
 .footer-icons img{
     margin: 0 10px;
@@ -226,13 +181,6 @@ body{
     }
 }
 @media screen and (max-width: 768px){
-    .tabs-list{
-        display: block;
-    }
-    .tabs-list .tab-item{
-        text-align: center;
-        margin-top: 20px;
-    }
     .footer-menu{
         display: block;
     }
