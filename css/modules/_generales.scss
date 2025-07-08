@@ -26,6 +26,9 @@ body{
 .h6, h6 {
     font-size: 1rem;
 }
+p{
+    line-height: 25px;
+}
 .text-white{
     color: $white;
 }
@@ -180,20 +183,35 @@ body{
     order: 1;
 }
 @mixin btn($background: $blue, $color: $white) {
-  background-color: $background;
-  padding: 10px 15px;
-  color: $color;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 12px;
+    background-color: $background;
+    padding: 10px 15px;
+    color: $color;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 1s;
+}
+@mixin btn-hover($background: $dark-blue, $color: $white) {
+    background-color: $background;
+    color: $color;
+    transition: 1s;
 }
 .btn-blue {
-  @include btn;
+    @include btn;
+}
+.btn-blue:hover{
+    @include btn-hover;
 }
 .btn-red {
-  @include btn($background: $red);
+    @include btn($background: $red);
+}
+.btn-red:hover{
+    @include btn-hover($background: $dark-red);
 }
 .btn-light {
-  @include btn($background: $light, $color: $white);
+    @include btn($background: $light-two, $color: $black);
+}
+.btn-light:hover{
+    @include btn-hover($background: $black, $color: $light-two);
 }

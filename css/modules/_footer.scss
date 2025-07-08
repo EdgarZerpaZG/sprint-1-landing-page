@@ -30,4 +30,9 @@
 }
 .footer-icons img{
     margin: 0 10px;
+    transition: 1s;
+}
+.footer-icons img:hover{
+    filter: brightness(50%);
+    transition: 1s;
 }

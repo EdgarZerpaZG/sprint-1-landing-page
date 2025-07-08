@@ -67,3 +67,12 @@
     margin-left: 120px;
     float: right;
 }
+.accordion-content {
+    width: 60%;
+}
+.accordion-list .accordion-item p{
+    color: #5d5d5d;
+}
+details > summary::marker {
+    content: none;
+}
