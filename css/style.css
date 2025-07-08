@@ -29,6 +29,9 @@ body{
 .h6, h6 {
     font-size: 1rem;
 }
+p{
+    line-height: 25px;
+}
 .text-white{
     color: #fff;
 }
@@ -211,7 +214,7 @@ body{
     transition: 1s;
 }
 .btn-light{
-    background-color: #ccc;
+    background-color: #5d5d5d;
     padding: 10px 15px;
     color: #000;
     border: none;
@@ -222,7 +225,7 @@ body{
 }
 .btn-light:hover{
     background-color: #000;
-    color: #ccc;
+    color: #5d5d5d;
     transition: 1s;
 }
 /******************************************/
@@ -382,6 +385,9 @@ body{
     padding: 20px 0;
     border-bottom: 1px solid #5d5d5d;
 }
+.accordion-list .accordion-item p{
+    color: #5d5d5d;
+}
 .accordion-list .accordion-item:nth-child(1){
     border-top: 1px solid #5d5d5d;
 }
@@ -427,6 +433,11 @@ details > summary::marker {
 }
 .footer-icons img{
     margin: 0 10px;
+    transition: 1s;
+}
+.footer-icons img:hover{
+    filter: brightness(50%);
+    transition: 1s;
 }
 /******************************************/
 /*Media Queries*/
