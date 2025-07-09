@@ -9,12 +9,13 @@
     }
 }
 @media screen and (max-width: 768px){
-    .tabs-list{
+    .tabs{
         display: block;
     }
-    .tabs-list .tab-item{
+    .tabs .tab-item{
         text-align: center;
-        margin-top: 20px;
+        width: 100%;
+        margin: 0;
     }
     .text-align-md-center{
         text-align: center;

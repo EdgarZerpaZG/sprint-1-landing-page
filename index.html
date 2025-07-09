@@ -98,27 +98,65 @@
                 <h5 class="mb-3">Features</h5>
                 <p class="mb-3 text-light">Our aim is to make it quick and easy for you to access your <br class="d-block d-md-none">favorite websites. Your bookmarks sync between your devices <br class="d-block d-md-none">so you can access them on the go</p>
             </div>
-            <div class="tabs my-5">
-                <div class="tabs-content my-5">
-                    <ul class="tabs-list">
-                        <li class="tab-item active pb-4">Simple Bookmarking</li>
-                        <li class="tab-item pb-4">Speedy Searching</li>
-                        <li class="tab-item pb-4">Easy Sharing</li>
-                    </ul>
+            <div class="my-5">
+                <div class="tabs my-5">
+                    <button id="defaultOpen" class="tablinks tab-item pb-4" onclick="openFeature(event, 'Simple')">Simple Bookmarking</button>
+                    <button class="tablinks tab-item pb-4" onclick="openFeature(event, 'Speedy')">Speedy Searching</button>
+                    <button class="tablinks tab-item pb-4" onclick="openFeature(event, 'Easy')">Easy Sharing</button>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="position-relative">
-                            <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="Bookmark">
-                            <div class="img-monitor-before-two"></div>
+                <div id="Simple" class="tab-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative">
+                                <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="Bookmark">
+                                <div class="img-monitor-before-two"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-md-4">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div>
+                                    <h5 class="mb-3 text-align-md-center">Bookmark in one click</h5>
+                                    <p class="mb-3 text-light text-align-md-center">Organize your bookmarks however you like. Our <br class="d-block d-md-none">simple drag-and-drop interface gives you complete <br class="d-block d-md-none">control over how you manage your favorite sites.</p>
+                                    <button type="button" class="btn-blue d-block mx-md-auto">More info</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 my-md-4">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div>
-                                <h5 class="mb-3 text-align-md-center">Bookmark in one click</h5>
-                                <p class="mb-3 text-light text-align-md-center">Organize your bookmarks however you like. Our <br class="d-block d-md-none">simple drag-and-drop interface gives you complete <br class="d-block d-md-none">control over how you manage your favorite sites.</p>
-                                <button type="button" class="btn-blue d-block mx-md-auto">More info</button>
+                </div>
+                <div id="Speedy" class="tab-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative">
+                                <img class="img-fluid img-monitor" src="img/illustration-features-tab-2.svg" alt="Bookmark">
+                                <div class="img-monitor-before-two"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-md-4">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div>
+                                    <h5 class="mb-3 text-align-md-center">Intelligent search</h5>
+                                    <p class="mb-3 text-light text-align-md-center">Our powerful search feature will help you find saved <br class="d-block d-md-none">sites in no time at all. No need to trawl through all of <br class="d-block d-md-none">your bookmarks.</p>
+                                    <button type="button" class="btn-blue d-block mx-md-auto">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Easy" class="tab-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative">
+                                <img class="img-fluid img-monitor" src="img/illustration-features-tab-3.svg" alt="Bookmark">
+                                <div class="img-monitor-before-two"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-md-4">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div>
+                                    <h5 class="mb-3 text-align-md-center">Share your bookmarks</h5>
+                                    <p class="mb-3 text-light text-align-md-center">Easily share your bookmarks and collections with <br class="d-block d-md-none">other. Create a shareable link that you can send at <br class="d-block d-md-none">the click of a button.</p>
+                                    <button type="button" class="btn-blue d-block mx-md-auto">More info</button>
+                                </div>
                             </div>
                         </div>
                     </div>

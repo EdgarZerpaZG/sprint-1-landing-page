@@ -34,20 +34,31 @@
 .shadow-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.tabs-list{
+.tabs{
     list-style: none;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
 }
-.tabs-list .tab-item{
+.tabs .tab-item{
     font-size: 16px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 15px 45px;
     cursor: pointer;
-    border-bottom: 2px solid $light;
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    background-color: #fff;
+    transition: 1s;
 }
-.tabs-list .tab-item.active{
-    border-bottom: 2px solid $red;
+.tabs .tab-item.active{
+    border-bottom: 2px solid #fb5859;
+}
+.tabs .tab-item:hover {
+  background-color: #ddd;
+}
+.tab-content {
+  display: none;
+  padding: 6px 12px;
 }
 .form-group input{
     padding: 8px;
