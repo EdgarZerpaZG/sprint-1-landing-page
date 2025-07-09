@@ -12,23 +12,20 @@
     <!--Header web tailwind css-->
     <header class="my-8">
         <div class="container">
-            <div class="flex flex-wrap justify-between">
-                <div class="col-md-6">
+            <div class="grid grid-cols-2 justify-between">
                     <div class="header-logo">
                         <img src="img/logo-bookmark.svg" alt="Bookmark">
                     </div>
-                </div>
-                <div class="col-md-6">
                     <div class="header-list hidden md:block">
                         <ul class="header-menu uppercase text-stone-500">
-                            <li class="menu-item">Features</li>
-                            <li class="menu-item">Pricing</li>
-                            <li class="menu-item">Contact</li>
-                            <li class="menu-item bg-red-500 hover:bg-red-600 py-2 px-3 text-white border-0 rounded cursor-pointer">Login</li>
+                            <li class="menu-item hover:text-gray-600">Features</li>
+                            <li class="menu-item hover:text-gray-600">Pricing</li>
+                            <li class="menu-item hover:text-gray-600">Contact</li>
+                            <li class="menu-item transition duration-300 bg-red-500 hover:bg-red-600 py-2 px-3 text-white border-0 rounded cursor-pointer">Login</li>
                         </ul>
                     </div>
                     <div id="menu-mobile-btn" class="header-list-mobile block md:hidden h-full">
-                        <div class="menu-mobile-box h-full flex justify-center items-center">
+                        <div class="menu-mobile-box h-full flex justify-end items-center">
                             <img class="img-fluid" src="img/icon-hamburger.svg" alt="Bookmark">
                         </div>
                     </div>
@@ -41,7 +38,7 @@
                         </div>
                         <div class="menu-mobile-content">
                             <div class="h-full w-full">
-                                <div class="col-12 h-full">
+                                <div class="h-full">
                                     <div class="menu-mobile-list">
                                         <ul class="header-menu-mobile uppercase">
                                             <li class="menu-item">Features</li>
@@ -53,7 +50,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div>
                                     <div class="menu-mobile-icons">
                                         <img class="img-fluid" src="img/icon-facebook.svg" alt="Logo Facebook">
                                         <img class="img-fluid" src="img/icon-twitter.svg" alt="Logo Twitter">
@@ -62,29 +59,28 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </header>
     <!--Content web tailwind css-->
     <section class="relative my-8 py-4">
         <div class="container">
-            <div class="md:flex md:flex-wrap">
-                <div class="col-12 col-md-6 my-4 order-end md:order-start">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="my-6 order-last md:order-first">
                     <div class="flex justify-center items-center h-full">
                         <div>
                             <p class="mb-3 text-center md:text-left text-3xl">A Simple Bookmark Manager</p>
                             <p class="mb-3 text-stone-500 text-center md:text-left">A clean and simple interface to organize your favorite <br class="hidden md:block">websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                             <div class="w-full">
                                 <div class="flex flex-wrap justify-center md:justify-normal">
-                                    <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer me-3">Get in on Chrome</button>
-                                    <button type="button" class="bg-slate-300 hover:bg-slate-400 py-2 px-3 text-black border-0 rounded cursor-pointer">Get in on Firefox</button>
+                                    <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer me-3">Get in on Chrome</button>
+                                    <button type="button" class="transition duration-300 bg-slate-300 hover:bg-slate-800 py-2 px-3 text-black hover:text-white border-0 rounded cursor-pointer">Get in on Firefox</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 order-start md:order-end">
+                <div class="order-first md:order-last">
                     <div class="relative">
                         <img class="img-fluid img-monitor img-border shadow-xl/30" src="img/illustration-features-tab-1.svg" alt="Bookmark">
                         <div class="img-monitor-before-one"></div>
@@ -93,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="relative my-8 py-4">
+    <section id="feature" class="relative my-8 py-4">
         <div class="container">
             <div class="text-center">
                 <p class="mb-3 text-3xl">Features</p>
@@ -103,69 +99,69 @@
                 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
                     <ul class="flex flex-wrap justify-around text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="text-red-600 hover:text-red-600 dark:text-red-500 dark:hover:text-red-500 border-red-600 dark:border-red-500">
                         <li class="me-2" role="presentation">
-                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Simple Bookmarking</button>
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg cursor-pointer hover:text-gray-600 hover:border-gray-800 dark:hover:text-gray-800" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Simple Bookmarking</button>
                         </li>
                         <li class="me-2" role="presentation">
-                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Speedy Searching</button>
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg cursor-pointer hover:text-gray-600 hover:border-gray-800 dark:hover:text-gray-800" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Speedy Searching</button>
                         </li>
                         <li role="presentation">
-                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Easy Sharing</button>
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg cursor-pointer hover:text-gray-600 hover:border-gray-800 dark:hover:text-gray-800" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Easy Sharing</button>
                         </li>
                     </ul>
                 </div>
                 <div id="default-tab-content">
                     <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="md:flex md:flex-wrap">
-                            <div class="col-12 col-md-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div>
                                 <div class="relative">
                                     <img class="img-fluid img-monitor" src="img/illustration-features-tab-1.svg" alt="Bookmark">
                                     <div class="img-monitor-before-two"></div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 md:my-4">
+                            <div class="my-6 md:my-1">
                                 <div class="flex justify-center items-center h-full">
                                     <div>
                                         <p class="mb-3 text-center md:text-left text-3xl">Bookmark in one click</p>
                                         <p class="mb-3 text-stone-500 text-center md:text-left">Organize your bookmarks however you like. Our <br class="hidden md:block">simple drag-and-drop interface gives you complete <br class="block md:hidden">control over how you manage your favorite sites.</p>
-                                        <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
+                                        <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                        <div class="md:flex md:flex-wrap">
-                            <div class="col-12 col-md-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div>
                                 <div class="relative">
                                     <img class="img-fluid img-monitor" src="img/illustration-features-tab-2.svg" alt="Bookmark">
                                     <div class="img-monitor-before-two"></div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 md:my-4">
+                            <div class="my-6 md:my-1">
                                 <div class="flex justify-center items-center h-full">
                                     <div>
                                         <p class="mb-3 md:text-left text-3xl">Intelligent search</p>
-                                        <p class="mb-3 text-stone-500 md:text-left">Our powerfull search feature will help you find saved <br class="hidden md:block">sites in no time at all. No need to trawl through all of <br class="hidden md:block">your bookmarks.</p>
-                                        <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
+                                        <p class="mb-3 text-stone-500 text-center md:text-left">Our powerfull search feature will help you find saved <br class="hidden md:block">sites in no time at all. No need to trawl through all of <br class="hidden md:block">your bookmarks.</p>
+                                        <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                        <div class="md:flex md:flex-wrap">
-                            <div class="col-12 col-md-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div>
                                 <div class="relative">
                                     <img class="img-fluid img-monitor" src="img/illustration-features-tab-3.svg" alt="Bookmark">
                                     <div class="img-monitor-before-two"></div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 md:my-4">
+                            <div class="my-6 md:my-1">
                                 <div class="flex justify-center items-center h-full">
                                     <div>
                                         <p class="mb-3 md:text-left text-3xl">Shres your bookmarks</p>
-                                        <p class="mb-3 text-stone-500 md:text-left">Easily share your bookmarks and collections with <br class="hidden md:block">other. Create a shareable link that you can send at <br class="block md:hidden">the click of a button.</p>
-                                        <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
+                                        <p class="mb-3 text-stone-500 text-center md:text-left">Easily share your bookmarks and collections with <br class="hidden md:block">other. Create a shareable link that you can send at <br class="block md:hidden">the click of a button.</p>
+                                        <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block md:inline mx-auto">More info</button>
                                     </div>
                                 </div>
                             </div>
@@ -182,37 +178,37 @@
                 <p class="mb-3 text-light">We've got more brwosers in the pipeline. Please do let us know if <br class="hidden md:block">you've got a favorite you'd like us to prioritize.</p>
             </div>
             <div class="my-5">
-                <div class="md:flex md:flex-wrap">
-                    <div class="col-12 col-md-4 flex justify-center h-full">
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <div class="flex justify-center h-full">
                         <div class="py-3 text-center shadow-xl/20 mx-3">
                             <img class="block mx-auto my-3" src="img/logo-chrome.svg" alt="Logo Google Chrome">
                             <p>Add to Chrome</p>
                             <p class="text-light">Minimum version 62</p>
                             <img class="img-fluid py-4" src="img/bg-dots.svg" alt="Bookmark">
                             <div class="my-2">
-                                <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
+                                <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 flex justify-center mt-4 md:mt-4 h-full">
+                    <div class="flex justify-center mt-4 md:mt-4 h-full">
                         <div class="py-3 text-center shadow-xl/20 mx-3">
                             <img class="block mx-auto my-3" src="img/logo-firefox.svg" alt="Logo Firefox">
                             <p>Add to Firefox</p>
                             <p class="text-light">Minimum version 55</p>
                             <img class="img-fluid py-4" src="img/bg-dots.svg" alt="Bookmark">
                             <div class="my-2">
-                                <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
+                                <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 flex justify-center mt-4 md:mt-8 h-full">
+                    <div class="flex justify-center mt-4 md:mt-8 h-full">
                         <div class="py-3 text-center shadow-xl/20 mx-3">
                             <img class="block mx-auto my-3" src="img/logo-opera.svg" alt="Logo Opera">
                             <p>Add to Opera</p>
                             <p class="text-light">Minimum version 46</p>
                             <img class="img-fluid py-4" src="img/bg-dots.svg" alt="Bookmark">
                             <div class="my-2">
-                                <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
+                                <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer">Add & Install Extension</button>
                             </div>
                         </div>
                     </div>
@@ -291,7 +287,7 @@
                         </div>
                     </div>
                     <div class="mt-5">
-                        <button type="button" class="bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block mx-auto">More info</button>
+                        <button type="button" class="transition duration-300 bg-blue-500 hover:bg-blue-800 py-2 px-3 text-white border-0 rounded cursor-pointer block mx-auto">More info</button>
                     </div>
                 </div>
             </div>
@@ -304,35 +300,35 @@
             <p class="mb-3 text-3xl">Stay up-to-date with what <br class="block md:hidden">we're doing</p>
             <form action="" class="form-group">
                 <input type="email" id="email" class="bg-white text-stone-500" placeholder="Enter your email address" required/>
-                <button type="submit" class="bg-red-500 hover:bg-red-600 py-2 px-3 text-white border-0 rounded cursor-pointer">Contact Us</button>
+                <button type="submit" class="transition duration-300 bg-red-500 hover:bg-red-600 py-2 px-3 text-white border-0 rounded cursor-pointer">Contact Us</button>
             </form>
         </div>
         <div class="bg-blue-950 text-white relative py-5">
             <div class="container">
-                <div class="md:flex md:flex-wrap">
-                    <div class="col-12 col-md-4">
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <div>
                         <div class="footer-logo">
                             <a href="#">
                                 <img class="img-fluid" src="img/logo-bookmark-white.svg" alt="Bookmark">
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div>
                         <div class="h-full">
                             <ul class="footer-menu uppercase">
-                                <li class="menu-item">Features</li>
-                                <li class="menu-item">Pricing</li>
-                                <li class="menu-item">Contact</li>
+                                <li class="menu-item hover:text-gray-600">Features</li>
+                                <li class="menu-item hover:text-gray-600">Pricing</li>
+                                <li class="menu-item hover:text-gray-600">Contact</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div>
                         <div class="footer-icons flex justify-end">
                             <a href="#">
-                                <img class="img-fluid" src="img/icon-facebook.svg" alt="Logo Facebook">
+                                <img class="img-fluid hover:brightness-50 transition duration-300" src="img/icon-facebook.svg" alt="Logo Facebook">
                             </a>
                             <a href="#">
-                                <img class="img-fluid" src="img/icon-twitter.svg" alt="Logo Twitter">
+                                <img class="img-fluid hover:brightness-50 transition duration-300" src="img/icon-twitter.svg" alt="Logo Twitter">
                             </a>
                         </div>
                     </div>
