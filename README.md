@@ -6,7 +6,7 @@ En este proyecto se ha realizado:
 - Landing Page con el preprocesador de Sass, esta se encuentra en la rama **sass**.
 - Landing Page con Tailwind, esta se encuentra en la rama **tailwind**.
 
-## A continuación se explicará los pasos y métodos utilizados para el desarrollo de cada versión de la Landing Page:
+## A continuación se explicarán los pasos y métodos utilizados para el desarrollo de cada versión de la Landing Page:
 
 ### 1. Rama **vanilla**:
 - En esta versión se ha utilizado solo HTML, CSS y JavaScript para crear esta vista. Se utilizaron las etiquetas que ofrece HTML para la creación de la estructura de la landing. Para la organización del contenido se hizo uso de las etiquetas **<section>** para la separación de cada parte del contenido y en su interior la información fue separada con las etiquetas **<div>** para una crear una jerarquía que más adelante será utíl para la implementación de los estilos.
@@ -17,10 +17,10 @@ En este proyecto se ha realizado:
 - Por último se agregaron algunas funciones para hacer un despliegue del menú principal en la versión mobile y la funcionalidad de los tabs que se muestran en la Landing Page.
 
 ### 2. Rama **sass**:
-- En esta versión se ha usado la misma estructura de la rama vanilla pero agregando el preprocesador de CSS conocido como **sass**.
+- En esta versión se ha usado la misma estructura de la rama vanilla pero agregando el preprocesador de CSS conocido como **Sass**.
 - Se ha hecho uso de esta herramienta para la refactorización de los estilos ofreciendo diferentes métodos para trabajar con el CSS de una forma más ordena y eficiente.
-- Se utilizaron diferentes métodos que ofrece Sass para compilar los estilos: **mixins**, **includes**, **variables** y **modules**.
-- Para la correcta visualización de estos estilo compilados hace falta tener instalado **sass** en el computador, se puede hacer a través de la terminal con del servicio de paquetes **npm** o con **Ruby** y **RubyGems** ya instalados en el computador.
+- Se utilizaron diferentes métodos que ofrece **Sass** para compilar los estilos: **mixins**, **includes**, **variables** y **modules**.
+- Para la correcta visualización de estos estilo compilados hace falta tener instalado **sass** en el computador, se puede hacer a través de la terminal con el servicio de paquetes **npm** o con **Ruby** y **RubyGems** ya instalados en el computador.
 - Para más información de este preprocesador de CSS se puede visitar la documentación oficial [Sass](https://sass-lang.com)
 
 ### 3. Rama **tailwind**:
@@ -29,4 +29,4 @@ En este proyecto se ha realizado:
 - Ofrece diferentes formas de como ordenar y presentar los elementos en el DOM por medio de sus clases, además se pueden integrar librerias adicionales para agregar diferentes funcionalidades; como: tabs y acordeones.
 - Para una mejor comprensión de este framework se puede leer la documentación oficial [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
 
-Para finalizar la evaluación de este Sprint, se ha hecho "merge" de la rama "tailwind" a la rama "develop" y seguidamente a la rama "main".
+Por último y para finalizar la evaluación de este Sprint, se ha hecho **merge** de la rama **tailwind** a la rama **develop** y seguidamente a la rama **main**.
