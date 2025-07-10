@@ -250,7 +250,12 @@ p {
   margin-right: 10px;
   display: flex;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .5s; }
+
+.header-menu .menu-item:hover {
+  color: #ccc;
+  transition: .5s; }
 
 /******************************************/
 /*Header Mobile*/
@@ -405,6 +410,12 @@ p {
   margin-left: 120px;
   float: right; }
 
+details summary img {
+  transform: rotate(180deg); }
+
+details:open summary img {
+  transform: rotate(180deg); }
+
 .accordion-content {
   width: 60%; }
 
@@ -441,7 +452,12 @@ details > summary::marker {
   margin-right: 10px;
   display: flex;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .5s; }
+
+.footer-menu .menu-item:hover {
+  color: #000;
+  transition: .5s; }
 
 .footer-icons {
   display: flex;
@@ -449,11 +465,11 @@ details > summary::marker {
 
 .footer-icons img {
   margin: 0 10px;
-  transition: 1s; }
+  transition: .5s; }
 
 .footer-icons img:hover {
-  filter: brightness(50%);
-  transition: 1s; }
+  filter: brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(2132%) hue-rotate(322deg) brightness(99%) contrast(99%);
+  transition: .5s; }
 
 /******************************************/
 /*Media Queries*/

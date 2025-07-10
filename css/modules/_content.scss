@@ -78,6 +78,12 @@
     margin-left: 120px;
     float: right;
 }
+details summary img{
+    transform: rotate(180deg);
+}
+details:open summary img{
+    transform: rotate(180deg);
+}
 .accordion-content {
     width: 60%;
 }
