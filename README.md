@@ -4,7 +4,7 @@ En este proyecto se ha realizado:
 
 - Landing Page con código vanilla, esta se encuentra en la rama **vanilla**.
 - Landing Page con el preprocesador de Sass, esta se encuentra en la rama **sass**.
-- Landing Page con Tailwind, esta se encuentra en la rama **tailwind**. Se ha incoporado este framework de CSS y utilizado su estructura para recrear la versión vanilla con sus propias clases.
+- Landing Page con Tailwind, esta se encuentra en la rama **tailwind**.
 
 ## A continuación se explicará los pasos y métodos utilizados para el desarrollo de cada versión de la Landing Page:
 
@@ -26,7 +26,7 @@ En este proyecto se ha realizado:
 ### 3. Rama **tailwind**:
 - En esta última rama se usó el framework de **Tailwind** sobre la misma estructura HTML que se utilizó en las anteriores versiones, solo que en este ocasión sin hacer uso de gran parte de los estilos CSS que se habían creado.
 - Se trata de un conjunto de estilos que nos proporciona diferentes forma de crear estructuras completas estilizadas de forma rápida.
-- Ofrece diferentes formas de como ordenar y presentar los elementos en el DOM, además se pueden integrar librerias adicionales para afregar diferentes funcionalidades, como: tabs, acordeones 
+- Ofrece diferentes formas de como ordenar y presentar los elementos en el DOM por medio de sus clases, además se pueden integrar librerias adicionales para agregar diferentes funcionalidades; como: tabs y acordeones.
 - Para una mejor comprensión de este framework se puede leer la documentación oficial [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
 
 Para finalizar la evaluación de este Sprint, se ha hecho "merge" de la rama "tailwind" a la rama "develop" y seguidamente a la rama "main".
